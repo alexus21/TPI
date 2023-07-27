@@ -57,10 +57,8 @@ if(userAnswer === "S" || userAnswer === "s"){
     let brand = p("Raza: ");
     let colour = p("Color: ");
     let favouriteToy = p("Juguete favorito: ");
-    let isTame = p("El perro es manso? [S/N]: ");
+    let isTame = p("El perro es manso?: ");
     let description = p("Descripción: ");
-
-    isTame = isTame === "S" || isTame === "s";
 
     //Usando objeto literal:
     NewDog.dogName = name;
