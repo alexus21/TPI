@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Object forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+<div class="container pt-6">
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="inputName" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputName" data-input-name>
+        </div>
+        <div class="col-md-4">
+            <label for="inputSurname" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="inputSurname" data-input-surname>
+        </div>
+        <div class="col-4">
+            <label for="inputPhone" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="inputPhone" data-input-phone>
+        </div>
+        <div class="col-12">
+            <label class="form-label">Ocupación</label>
+            <select class="form-select" aria-label="Default select example" id="selectOccupation" data-select-occupation>
+                <option selected>Selecciona tu ocupación</option>
+                <option value="1">Programador</option>
+                <option value="2">Diseñador</option>
+                <option value="3">Sysadmin</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputBirthDay" class="form-label">Fecha de nacimiento</label>
+            <input type="date" class="form-control" id="inputBirthDay" data-select-birthday>
+        </div>
+        <div class="col-md-6">
+            <label for="formFile" class="form-label">Fotografía</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary" data-send-button>Enviar</button>
+        </div>
+
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary d-none" data-show-button>Mostrar</button>
+        </div>
+    </form>
+    <div id="sysadminList"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
