@@ -1,0 +1,29 @@
+{
+    "estudiantes": [
+        {
+            "nombre": "Juan",
+            "apellido": "Pérez",
+            "notaFinal": 9.5
+        },
+        {
+            "nombre": "María",
+            "apellido": "García",
+            "notaFinal": 8.5
+        },
+        {
+            "nombre": "Carlos",
+            "apellido": "López",
+            "notaFinal": 7.8
+        },
+        {
+            "nombre": "Ana",
+            "apellido": "Martínez",
+            "notaFinal": 9.2
+        },
+        {
+            "nombre": "Luis",
+            "apellido": "Rodríguez",
+            "notaFinal": 7.0
+        }
+    ]
+}
