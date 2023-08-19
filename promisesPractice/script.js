@@ -1,20 +1,19 @@
-const jsonDataFile = "http://localhost:3000/estudiantes";
+const url = "http://localhost:3000/estudiantes";
 
-let p = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-        if (true)
-            resolve("Resuelto exitosamente");
-        else
-            reject(new Error("Error al procesar"));
-    }, 1000);
-});
+function studentsData() {
+    return new Promise(function (resolve, reject){
+        setTimeout(function (){
+            if(true)
+                resolve("Resuelto exitosamente");
+            reject(new Error("Error al procesar datos"));
+        }, 1000);
+    });
+}
 
-console.log(p);
-
-p.then(function (message) { // Cambio studentsData a message
-    console.log(message); // Cambio studentsData a message
-    return fetch(jsonDataFile);
+studentsData().then(function (data){
+    console.log("Datos obtenidos: ", data);
+    return fetch(url);
 })
     .then(response => response.json())
-    .then(studentsData => console.log("Datos de los estudiantes: ", studentsData))
-    .catch(error => console.log("Error: ", error.message)); // El catch evita que acceda al siguiente then
+    .then(data => console.log(data))
+    .catch(error => console.error("Error al procesar: ", error));
